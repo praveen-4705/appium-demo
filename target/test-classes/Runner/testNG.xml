@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Smoke Test" verbose="1">
+	<listeners>
+		<listener class-name="utilities.ReportLisener" />
+		<listener class-name="com.saucelabs.testng.SauceOnDemandTestListener"></listener>
+	</listeners>
+
+	<test name="Smoke Scripts">
+		<classes>
+			<class name="testscripts.AmazonTest" />
+		</classes>
+	</test>
+</suite>

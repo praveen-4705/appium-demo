@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Smoke Test" duration-ms="113425" started-at="2016-12-24T02:44:48Z" finished-at="2016-12-24T02:46:42Z">
+    <groups>
+    </groups>
+    <test name="Smoke Scripts" duration-ms="113425" started-at="2016-12-24T02:44:48Z" finished-at="2016-12-24T02:46:42Z">
+      <class name="testscripts.AmazonTest">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:testscripts.AmazonTest@3712b94]" name="beforeMethod" is-config="true" duration-ms="80523" started-at="2016-12-24T08:14:48Z" finished-at="2016-12-24T08:16:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4ba302e0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testscripts.AmazonTest.skipSignTest() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="skipSignTest()[pri:0, instance:testscripts.AmazonTest@3712b94]" name="skipSignTest" duration-ms="20944" started-at="2016-12-24T08:16:09Z" finished-at="2016-12-24T08:16:30Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.50 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'nboss-MacBook-Pro.local', ip: '192.168.2.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12', java.version: '1.8.0_102'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=io.selendroid.testapp, noReset=true, webdriver.remote.quietExceptions=true, deviceName=emulator-5554, platform=LINUX, deviceUDID=emulator-5554, desired={app=/tmp/tmpwXvwjU/selendroid-test-app-0.17.0 (1).apk, proxy={proxyAutoconfigUrl=http://127.0.0.1:19876/pac.js, proxyType=PAC}, orientation=PORTRAIT, noReset=true, newCommandTimeout=0, platformVersion=5.1, webdriver.remote.quietExceptions=true, udid=emulator-5554, platformName=Android, deviceName=Android Emulator}, newCommandTimeout=0, platformVersion=5.1, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, udid=emulator-5554, app=/tmp/tmpwXvwjU/selendroid-test-app-0.17.0 (1).apk, orientation=PORTRAIT, networkConnectionEnabled=true, warnings={}, appWaitPackage=io.selendroid.testapp, appWaitActivity=io.selendroid.testapp.HomeScreenActivity, hasMetadata=true, databaseEnabled=false, appActivity=io.selendroid.testapp.HomeScreenActivity, proxy={proxyAutoconfigUrl=http://127.0.0.1:19876/pac.js, proxyType=PAC}, webdriver.remote.sessionid=6964e226d32241dbb02ebd2fe1667fd7, locationContextEnabled=false}]
+Session ID: 6964e226d32241dbb02ebd2fe1667fd7
+*** Element info: {Using=id, value=skip_sign_in_button}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.50 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'nboss-MacBook-Pro.local', ip: '192.168.2.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12', java.version: '1.8.0_102'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=io.selendroid.testapp, noReset=true, webdriver.remote.quietExceptions=true, deviceName=emulator-5554, platform=LINUX, deviceUDID=emulator-5554, desired={app=/tmp/tmpwXvwjU/selendroid-test-app-0.17.0 (1).apk, proxy={proxyAutoconfigUrl=http://127.0.0.1:19876/pac.js, proxyType=PAC}, orientation=PORTRAIT, noReset=true, newCommandTimeout=0, platformVersion=5.1, webdriver.remote.quietExceptions=true, udid=emulator-5554, platformName=Android, deviceName=Android Emulator}, newCommandTimeout=0, platformVersion=5.1, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, udid=emulator-5554, app=/tmp/tmpwXvwjU/selendroid-test-app-0.17.0 (1).apk, orientation=PORTRAIT, networkConnectionEnabled=true, warnings={}, appWaitPackage=io.selendroid.testapp, appWaitActivity=io.selendroid.testapp.HomeScreenActivity, hasMetadata=true, databaseEnabled=false, appActivity=io.selendroid.testapp.HomeScreenActivity, proxy={proxyAutoconfigUrl=http://127.0.0.1:19876/pac.js, proxyType=PAC}, webdriver.remote.sessionid=6964e226d32241dbb02ebd2fe1667fd7, locationContextEnabled=false}]
+Session ID: 6964e226d32241dbb02ebd2fe1667fd7
+*** Element info: {Using=id, value=skip_sign_in_button}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:64)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at pages.BasePage.click(BasePage.java:25)
+	at pages.SignInPage.clickOnSkipSignIn(SignInPage.java:27)
+	at testscripts.AmazonTest.skipSignTest(AmazonTest.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- skipSignTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testscripts.AmazonTest@3712b94]" name="afterMethod" is-config="true" duration-ms="1783" started-at="2016-12-24T08:16:40Z" finished-at="2016-12-24T08:16:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=skipSignTest status=FAILURE method=AmazonTest.skipSignTest()[pri:0, instance:testscripts.AmazonTest@3712b94] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testscripts.AmazonTest.skipSignTest() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testscripts.AmazonTest -->
+    </test> <!-- Smoke Scripts -->
+  </suite> <!-- Smoke Test -->
+</testng-results>

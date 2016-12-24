@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Smoke Test]">
+  <listeners>
+    <listener class-name="utilities.ReportLisener"/>
+    <listener class-name="com.saucelabs.testng.SauceOnDemandTestListener"/>
+  </listeners>
+  <test name="Smoke Scripts(failed)">
+    <classes>
+      <class name="testscripts.AmazonTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="skipSignTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testscripts.AmazonTest -->
+    </classes>
+  </test> <!-- Smoke Scripts(failed) -->
+</suite> <!-- Failed suite [Smoke Test] -->

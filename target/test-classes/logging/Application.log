@@ -1,0 +1,76 @@
+14/12/2016 06:48:46 devpinoyLogger Creating some desired capabilities
+14/12/2016 06:48:46 devpinoyLogger Starting app
+14/12/2016 06:48:51 devpinoyLogger Waiting for 5 seconds
+14/12/2016 06:48:56 devpinoyLogger Getting 1 st element
+14/12/2016 06:48:56 devpinoyLogger Getting 2nd element
+14/12/2016 06:48:56 devpinoyLogger Getting 3rd element
+14/12/2016 06:48:56 devpinoyLogger Creating action class
+14/12/2016 06:48:56 devpinoyLogger Performing multi touch
+21/12/2016 06:40:28 devpinoyLogger Adding desired capabilities
+21/12/2016 06:40:28 devpinoyLogger Launching dirver
+21/12/2016 06:40:38 devpinoyLogger Click on [[AndroidDriver: android on ANDROID (b53252ae-ad20-4559-b350-a8149d393603)] -> id: skip_sign_in_button]
+21/12/2016 06:40:40 devpinoyLogger Click on [[AndroidDriver: android on ANDROID (b53252ae-ad20-4559-b350-a8149d393603)] -> id: rs_search_src_text]
+21/12/2016 06:40:42 devpinoyLogger Entering text on [[AndroidDriver: android on ANDROID (b53252ae-ad20-4559-b350-a8149d393603)] -> id: rs_search_src_text]
+21/12/2016 06:40:54 devpinoyLogger Click on [[AndroidDriver: android on ANDROID (b53252ae-ad20-4559-b350-a8149d393603)] -> id: rs_search_dropdown_item_text]
+21/12/2016 06:40:58 devpinoyLogger Getting test from [[AndroidDriver: android on ANDROID (b53252ae-ad20-4559-b350-a8149d393603)] -> id: item_title]
+21/12/2016 06:40:58 devpinoyLogger Quiting driver
+21/12/2016 06:50:07 devpinoyLogger Adding desired capabilities
+21/12/2016 06:50:07 devpinoyLogger Launching dirver
+21/12/2016 06:50:22 devpinoyLogger Click on [[AndroidDriver: android on ANDROID (d0c068a0-60bd-478a-b246-44e549a1be4a)] -> id: skip_sign_in_button]
+21/12/2016 06:50:24 devpinoyLogger Click on [[AndroidDriver: android on ANDROID (d0c068a0-60bd-478a-b246-44e549a1be4a)] -> id: rs_search_src_text]
+21/12/2016 06:50:26 devpinoyLogger Entering text on [[AndroidDriver: android on ANDROID (d0c068a0-60bd-478a-b246-44e549a1be4a)] -> id: rs_search_src_text]
+21/12/2016 06:50:40 devpinoyLogger Click on [[AndroidDriver: android on ANDROID (d0c068a0-60bd-478a-b246-44e549a1be4a)] -> id: rs_search_dropdown_item_text]
+21/12/2016 06:50:44 devpinoyLogger Getting test from [[AndroidDriver: android on ANDROID (d0c068a0-60bd-478a-b246-44e549a1be4a)] -> id: item_title]
+21/12/2016 06:50:45 devpinoyLogger Quiting driver
+21/12/2016 07:19:06 devpinoyLogger Adding desired capabilities
+21/12/2016 07:19:06 devpinoyLogger Launching dirver
+21/12/2016 07:19:29 devpinoyLogger Click on [[AndroidDriver: android on ANDROID (9686e434-6402-4ae4-b691-d541386f7aba)] -> id: skip_sign_in_button]
+21/12/2016 07:19:31 devpinoyLogger Click on [[AndroidDriver: android on ANDROID (9686e434-6402-4ae4-b691-d541386f7aba)] -> id: rs_search_src_text]
+21/12/2016 07:19:34 devpinoyLogger Entering text on [[AndroidDriver: android on ANDROID (9686e434-6402-4ae4-b691-d541386f7aba)] -> id: rs_search_src_text]
+21/12/2016 07:19:46 devpinoyLogger Click on [[AndroidDriver: android on ANDROID (9686e434-6402-4ae4-b691-d541386f7aba)] -> id: rs_search_dropdown_item_text]
+21/12/2016 07:19:50 devpinoyLogger Getting test from [[AndroidDriver: android on ANDROID (9686e434-6402-4ae4-b691-d541386f7aba)] -> id: item_title]
+21/12/2016 07:19:50 devpinoyLogger Quiting driver
+21/12/2016 20:31:15 devpinoyLogger Adding desired capabilities
+21/12/2016 20:31:15 devpinoyLogger Launching dirver
+21/12/2016 20:34:02 devpinoyLogger Unable to laucnh the driver
+21/12/2016 20:36:12 devpinoyLogger Adding desired capabilities
+21/12/2016 20:36:12 devpinoyLogger Launching dirver
+21/12/2016 20:36:38 devpinoyLogger Unable to laucnh the driver
+21/12/2016 20:53:24 devpinoyLogger Adding desired capabilities
+21/12/2016 20:53:24 devpinoyLogger Launching dirver
+21/12/2016 20:53:32 devpinoyLogger Unable to laucnh the driver
+21/12/2016 20:54:38 devpinoyLogger Adding desired capabilities
+21/12/2016 20:54:38 devpinoyLogger Launching dirver
+21/12/2016 20:56:18 devpinoyLogger Unable to laucnh the driver
+21/12/2016 20:56:59 devpinoyLogger Adding desired capabilities
+21/12/2016 20:56:59 devpinoyLogger Launching dirver
+21/12/2016 20:57:23 devpinoyLogger Click on Proxy element for: DefaultElementLocator 'By.id: skip_sign_in_button'
+21/12/2016 20:57:48 devpinoyLogger Quiting driver
+21/12/2016 20:58:16 devpinoyLogger Adding desired capabilities
+21/12/2016 20:58:16 devpinoyLogger Launching dirver
+21/12/2016 20:58:23 devpinoyLogger Unable to laucnh the driver
+21/12/2016 21:04:07 devpinoyLogger Adding desired capabilities
+21/12/2016 21:04:08 devpinoyLogger Launching dirver
+21/12/2016 21:04:12 devpinoyLogger Unable to laucnh the driver
+22/12/2016 06:11:32 devpinoyLogger Adding desired capabilities
+22/12/2016 06:11:32 devpinoyLogger Launching dirver
+22/12/2016 06:11:34 devpinoyLogger Unable to laucnh the driver
+22/12/2016 06:11:45 devpinoyLogger Adding desired capabilities
+22/12/2016 06:11:45 devpinoyLogger Launching dirver
+22/12/2016 06:11:49 devpinoyLogger Unable to laucnh the driver
+22/12/2016 06:12:23 devpinoyLogger Adding desired capabilities
+22/12/2016 06:12:23 devpinoyLogger Launching dirver
+22/12/2016 06:12:50 devpinoyLogger Click on Proxy element for: DefaultElementLocator 'By.id: skip_sign_in_button'
+22/12/2016 06:13:01 devpinoyLogger Quiting driver
+22/12/2016 06:14:10 devpinoyLogger Adding desired capabilities
+22/12/2016 06:14:10 devpinoyLogger Launching dirver
+22/12/2016 06:14:33 devpinoyLogger Click on Proxy element for: DefaultElementLocator 'By.id: skip_sign_in_button'
+22/12/2016 06:14:44 devpinoyLogger Quiting driver
+22/12/2016 06:26:43 devpinoyLogger Adding desired capabilities
+22/12/2016 06:26:43 devpinoyLogger Launching dirver
+22/12/2016 06:26:56 devpinoyLogger Click on [[AndroidDriver: android on ANDROID (668a834c-e26a-461c-81a8-4a41662d4df2)] -> id: skip_sign_in_button]
+22/12/2016 06:26:57 devpinoyLogger Click on [[AndroidDriver: android on ANDROID (668a834c-e26a-461c-81a8-4a41662d4df2)] -> id: rs_search_src_text]
+22/12/2016 06:27:00 devpinoyLogger Entering text on [[AndroidDriver: android on ANDROID (668a834c-e26a-461c-81a8-4a41662d4df2)] -> id: rs_search_src_text]
+22/12/2016 06:27:12 devpinoyLogger Click on [[AndroidDriver: android on ANDROID (668a834c-e26a-461c-81a8-4a41662d4df2)] -> id: rs_search_dropdown_item_text]
+22/12/2016 06:27:16 devpinoyLogger Getting test from [[AndroidDriver: android on ANDROID (668a834c-e26a-461c-81a8-4a41662d4df2)] -> id: item_title]
+22/12/2016 06:27:16 devpinoyLogger Quiting driver
