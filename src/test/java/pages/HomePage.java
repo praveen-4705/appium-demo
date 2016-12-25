@@ -52,7 +52,7 @@ public class HomePage extends BasePage {
 
 		try {
 			prodcutName = ExcelReader
-					.readExcel(System.getProperty("user.dir") + "/srs/test/resources/TestData.xls", "ProductList")
+					.readExcel(System.getProperty("user.dir") + "/src/test/resources/TestData.xls", "ProductList")
 					.get(0);
 			System.out.println(prodcutName);
 		} catch (IOException e) {

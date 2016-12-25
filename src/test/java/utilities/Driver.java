@@ -1,5 +1,6 @@
 package utilities;
 
+import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -19,7 +20,7 @@ import io.appium.java_client.remote.MobileCapabilityType;
 
 public class Driver implements SauceOnDemandSessionIdProvider, SauceOnDemandAuthenticationProvider {
 
-	public AppiumDriver<MobileElement> driver;
+	public AndroidDriver<MobileElement> driver;
 
 	DesiredCapabilities desiredCapabilities;
 
@@ -57,17 +58,15 @@ public class Driver implements SauceOnDemandSessionIdProvider, SauceOnDemandAuth
 
 		if (isLocal) {
 			log.info("Adding desired capabilities");
-			desiredCapabilities = DesiredCapabilities.android();
-
-			desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Android");
+			
+//			File app = new File(System.getProperty("user.dir") + "/src/test/resources/Amzon2.apk");
+			
+			desiredCapabilities = new DesiredCapabilities();
 			desiredCapabilities.setCapability("appPackage", "in.amazon.mShop.android.shopping");
 			desiredCapabilities.setCapability("appActivity", "com.amazon.mShop.home.HomeActivity");
+			desiredCapabilities.setCapability("deviceName", "Android");
 
-			// File apkFile = new
-			// File("/Users/praveen/Documents/praveen/pomFramework/src/test/resources/Amazon.apk");
-
-			// desiredCapabilities.setCapability("app",
-			// apkFile.getAbsolutePath());
+//			desiredCapabilities.setCapability("app", app.getAbsolutePath());
 
 			log.info("Launching dirver");
 			try {
@@ -130,7 +129,7 @@ public class Driver implements SauceOnDemandSessionIdProvider, SauceOnDemandAuth
 		return driver;
 	}
 
-	public void setDriver(AppiumDriver<MobileElement> driver) {
+	public void setDriver(AndroidDriver<MobileElement> driver) {
 		this.driver = driver;
 	}
 
