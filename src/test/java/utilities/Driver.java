@@ -4,6 +4,7 @@ import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -16,11 +17,12 @@ import com.saucelabs.testng.SauceOnDemandAuthenticationProvider;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
 public class Driver implements SauceOnDemandSessionIdProvider, SauceOnDemandAuthenticationProvider {
 
-	public AndroidDriver<MobileElement> driver;
+	public AppiumDriver<MobileElement> driver;
 
 	DesiredCapabilities desiredCapabilities;
 
@@ -50,6 +52,8 @@ public class Driver implements SauceOnDemandSessionIdProvider, SauceOnDemandAuth
 
 		if (isAndroid) {
 			createAndoridDriver(isLocal);
+		}else {
+			createiOSDriver(isLocal);
 		}
 
 	}
@@ -124,12 +128,88 @@ public class Driver implements SauceOnDemandSessionIdProvider, SauceOnDemandAuth
 			}
 		}
 	}
+	
+	public void createiOSDriver(boolean isLocal){
+		
+		if (isLocal) {
+			
+			log.info("Creating Locat iOS driver file");
+			
+			desiredCapabilities = new DesiredCapabilities();
+
+			File file = new File(System.getProperty("user.dir") + "/src/test/resources/UICatalog.app");
+
+			desiredCapabilities.setCapability("app", file.getAbsolutePath());
+			desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 6s");
+			desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "9.3");
+			desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "iOS");
+			desiredCapabilities.setCapability(MobileCapabilityType.FULL_RESET, true);
+
+			try {
+				driver = new IOSDriver<MobileElement>(new URL("http://127.0.0.1:4723//wd/hub"), desiredCapabilities);
+			} catch (MalformedURLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			
+			
+		}else {
+			
+			desiredCapabilities	= new DesiredCapabilities();
+			
+			// Set user info for Saucelabs
+			if (System.getenv("SAUCE_USER_NAME") == null)
+				sauceUsername = TestConfig.sauceUsername;
+			else
+				sauceUsername = System.getenv("SAUCE_USER_NAME");
+
+			if (System.getenv("SAUCE_API_KEY") == null)
+				sauceAccessKey = TestConfig.sauceAccessKey;
+			else
+				sauceAccessKey = System.getenv("SAUCE_API_KEY");
+
+			// Create Saucelabs authenticator and REST client
+			this.sauceAuth = new SauceOnDemandAuthentication(sauceUsername, sauceAccessKey);
+			this.sauceClient = new SauceREST(sauceUsername, sauceAccessKey);
+			
+			desiredCapabilities.setCapability("platformName", "iOS");
+			desiredCapabilities.setCapability("deviceName", "iPhone 6s Plus");
+			desiredCapabilities.setCapability("platformVersion", "9.3");
+			desiredCapabilities.setCapability("app", "sauce-storage:IOSApp.zip");
+			desiredCapabilities.setCapability("browserName", "");
+			desiredCapabilities.setCapability("deviceOrientation", "portrait");
+			desiredCapabilities.setCapability("appiumVersion", "1.5.3");
+			desiredCapabilities.setCapability("platform", "OS X 10.11");
+			
+			
+			tags.add(this.testArea);
+			desiredCapabilities.setCapability("name", testName);
+			desiredCapabilities.setCapability("tags", tags);
+
+			try {
+
+				// Set the driver
+				driver = new IOSDriver<MobileElement>(
+						new URL("http://" + this.getAuthentication().getUsername() + ":"
+								+ this.getAuthentication().getAccessKey() + "@ondemand.saucelabs.com:80/wd/hub"),
+						desiredCapabilities);
+
+			} catch (MalformedURLException e) {
+
+				e.printStackTrace();
+			}
+			
+		}
+		
+	}
 
 	public AppiumDriver<MobileElement> getDriver() {
 		return driver;
 	}
 
-	public void setDriver(AndroidDriver<MobileElement> driver) {
+	public void setDriver(AppiumDriver<MobileElement> driver) {
 		this.driver = driver;
 	}
 
