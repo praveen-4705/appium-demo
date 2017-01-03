@@ -17,7 +17,7 @@ public class AmazonTest extends BaseTest{
 
 	@BeforeMethod
 	public void beforeMethod(ITestContext context, Method m) throws MalformedURLException {
-		super.intializeDriver(m.getName(), context.getName(), true,true);
+		super.intializeDriver(m.getName(), context.getName(), true,false);
 	}
 
 	@Test
