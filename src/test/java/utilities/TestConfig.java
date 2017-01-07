@@ -19,7 +19,7 @@ public class TestConfig{
 	 *
 	 */
 	
-	public static String sauceUsername = "praveen-4705";
-	public static String sauceAccessKey = "62c7703d-8012-4b46-9b99-58f91b4638db";
+	public static String sauceUsername = "praveen44705";
+	public static String sauceAccessKey = "c511d015-c145-41ea-88d0-ea43fd763877";
 	
 }
