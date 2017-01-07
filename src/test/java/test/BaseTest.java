@@ -23,8 +23,6 @@ public class BaseTest {
 	protected Driver d;
 	protected boolean localFlag = false;
 
-	public static Logger log = Logger.getLogger("devpinoyLogger");
-
 	public void intializeDriver(String testName, String testArea, boolean isAndroid, boolean isLocal)
 			throws MalformedURLException {
 
@@ -48,8 +46,6 @@ public class BaseTest {
 				d.getSauceClient().jobFailed(sauceSessionId);
 		} else {
 
-			log.info("Quiting driver");
-
 			System.out.println(result.isSuccess());
 			System.out.println(!result.isSuccess());
 
@@ -57,7 +53,6 @@ public class BaseTest {
 				Screenshot.takeScreenshot(d.getDriver(),
 						System.getProperty("user.dir") + "/src/test/resources/screenshot/Screenshot.png");
 			} catch (IOException e) {
-				log.error("Unable to take the screenshot");
 				e.printStackTrace();
 			}
 
@@ -71,7 +66,7 @@ public class BaseTest {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			} catch (MessagingException e) {
-				log.error("Unable to send mail");
+				
 			}
 
 		}

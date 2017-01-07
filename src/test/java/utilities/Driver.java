@@ -26,8 +26,6 @@ public class Driver implements SauceOnDemandSessionIdProvider, SauceOnDemandAuth
 
 	DesiredCapabilities desiredCapabilities;
 
-	public static Logger log = Logger.getLogger("devpinoyLogger");
-
 	private ThreadLocal<String> sessionId = new ThreadLocal<String>();
 	private SauceOnDemandAuthentication sauceAuth;
 	private SauceREST sauceClient;
@@ -61,7 +59,6 @@ public class Driver implements SauceOnDemandSessionIdProvider, SauceOnDemandAuth
 	public void createAndoridDriver(boolean isLocal) {
 
 		if (isLocal) {
-			log.info("Adding desired capabilities");
 			
 //			File app = new File(System.getProperty("user.dir") + "/src/test/resources/Amzon2.apk");
 			
@@ -72,15 +69,12 @@ public class Driver implements SauceOnDemandSessionIdProvider, SauceOnDemandAuth
 
 //			desiredCapabilities.setCapability("app", app.getAbsolutePath());
 
-			log.info("Launching dirver");
 			try {
 
 				driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723//wd/hub"),
 						desiredCapabilities);
 
 			} catch (Exception e) {
-
-				log.error("Unable to laucnh the driver");
 
 				e.printStackTrace();
 			}
@@ -133,16 +127,15 @@ public class Driver implements SauceOnDemandSessionIdProvider, SauceOnDemandAuth
 		
 		if (isLocal) {
 			
-			log.info("Creating Locat iOS driver file");
-			
 			desiredCapabilities = new DesiredCapabilities();
 
 			File file = new File(System.getProperty("user.dir") + "/src/test/resources/UICatalog.app");
 
 			desiredCapabilities.setCapability("app", file.getAbsolutePath());
 			desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 6s");
-			desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "9.3");
+			desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10.2");
 			desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "iOS");
+			desiredCapabilities.setCapability("automationName", "XCUITest");
 			desiredCapabilities.setCapability(MobileCapabilityType.FULL_RESET, true);
 
 			try {

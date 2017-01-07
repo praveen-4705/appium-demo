@@ -16,7 +16,7 @@ public class iOSTestScript extends BaseTest{
 	
 	@BeforeMethod
 	public void beforeMethod(ITestContext context, Method m) throws MalformedURLException {
-		super.intializeDriver(m.getName(), context.getName(), false,false);
+		super.intializeDriver(m.getName(), context.getName(), false,true);
 	}
 	
 	@Test
