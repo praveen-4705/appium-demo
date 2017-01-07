@@ -1,6 +1,5 @@
 package pages;
 
-import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 
 import utilities.Driver;
@@ -8,8 +7,6 @@ import utilities.Driver;
 public class BasePage {
 
 	protected Driver driver;
-	
-	public static Logger log = Logger.getLogger("devpinoyLogger");
 
 	public BasePage(Driver driver) {
 		this.driver = driver;
@@ -21,7 +18,7 @@ public class BasePage {
 	 * @param w
 	 */
 	public void click(WebElement w) {
-		log.info("Click on " + w);
+		
 		w.click();
 	}
 	
@@ -32,7 +29,6 @@ public class BasePage {
 	 * @param text
 	 */
 	public void type(WebElement w, String text){
-		log.info("Entering text on " + w);
 		w.clear();
 		w.sendKeys(text);
 	}
@@ -43,8 +39,6 @@ public class BasePage {
 	 * @return
 	 */
 	public String getText(WebElement w){
-		
-		log.info("Getting test from " + w);
 		return w.getText();	
 	}
 
